@@ -1,2 +1,2 @@
-# monverse
-Self Portfolio App using Flutter + Dart + Firrebase
+# MonVerse
+Self Portfolio App using Flutter + Dart + Firebase
