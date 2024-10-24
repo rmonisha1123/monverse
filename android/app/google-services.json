@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "484163555166",
+    "project_id": "mon-verse",
+    "storage_bucket": "mon-verse.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:484163555166:android:8b619b80aa0f0583a7c9cf",
+        "android_client_info": {
+          "package_name": "com.mondev.mon_verse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAT_8fhwYSieP-SyoJjGos1lfiYhoSQVEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
