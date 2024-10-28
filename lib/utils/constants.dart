@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class Apptheme {
   static const Color white = Colors.white;
   static const Color black = Colors.black;
+  static const Color grey = Color.fromARGB(255, 119, 119, 119);
   static const Color darkBlue = Color.fromARGB(255, 32, 42, 102);
   static const Color softAmber = Color.fromARGB(255, 243, 162, 65);
   static const Color paleAmber = Color.fromARGB(255, 246, 193, 119);
@@ -36,9 +37,17 @@ class AssetPaths {
   static const String rStudioIcon = "assets/techStacks/r.png";
   static const String androidStudioIcon =
       "assets/techStacks/android-studio.png";
+  static const String currentCompanyLogo = "assets/company_logos/cruxule.png";
 }
 
 class AppText {
   static const String colabContent =
       "I'm so glad you are here. Get to know me and do drop me an email if you would like to collab or hire me for your next project! ✨";
+  static const String aboutMe =
+      "I am a highly organized and detail-oriented professional known for consistently exceeding deadlines in fast-paced environments. As a collaborative team player, I leverage adaptability and precision to drive success. Committed to delivering outstanding results, I thrive on tackling challenges with determination, discipline, and expertise.";
+  static const String currentCompanyName = "Cruxule Solutions";
+  static const String currentPosition = "Full Stack Mobile App Developer";
+  static const String currentCompanyLocation = "Chennai, Tamil Nadu, India";
+  static const String currentCompanyWorkType = "Full Time";
+  static const String currentCompanyWorkExp = "2 yrs 11 mos";
 }

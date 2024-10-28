@@ -1,25 +1,28 @@
 import 'package:flutter/material.dart';
+import 'package:monisha_portfolio/utils/constants.dart';
+import 'package:monisha_portfolio/widgets.dart';
 
 class CounterWidget extends StatelessWidget {
   final String title;
   final int count;
 
-  CounterWidget({required this.title, required this.count});
+  const CounterWidget({super.key, required this.title, required this.count});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text(
-          '$count',
-          style: TextStyle(
-              fontSize: 24, fontWeight: FontWeight.bold, color: Colors.blue),
+        AppFontText(
+          text: '$count',
+          fontSize: 24,
+          fontWeight: FontWeight.bold,
+          color: Apptheme.softAmber,
         ),
-        SizedBox(height: 5),
-        Text(
-          title,
-          style: TextStyle(fontSize: 16),
-        ),
+        const SizedBox(height: 5),
+        AppFontText(
+          text: title,
+          fontSize: 16,
+        )
       ],
     );
   }
