@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:monisha_portfolio/screens/landing_screen.dart';
@@ -65,6 +66,11 @@ class _MyAppState extends State<MyApp> {
       return const CircularProgressIndicator();
     }
     return MaterialApp(
+      theme: ThemeData(
+        textTheme: TextTheme(
+          bodyMedium: GoogleFonts.montserrat(fontSize: 12),
+        ),
+      ),
       title: 'MonVerse',
       debugShowCheckedModeBanner: false,
       home: _isFirstLaunch ? const IntroScreen() : const LandingScreen(),
