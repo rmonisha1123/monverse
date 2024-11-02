@@ -38,6 +38,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "convex_bottom_bar",
+      "rootUri": "file:///Users/rmonisha1123/.pub-cache/hosted/pub.dev/convex_bottom_bar-3.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "crypto",
       "rootUri": "file:///Users/rmonisha1123/.pub-cache/hosted/pub.dev/crypto-3.0.5",
       "packageUri": "lib/",
@@ -446,7 +452,7 @@
       "languageVersion": "3.5"
     }
   ],
-  "generated": "2024-10-26T11:32:33.717143Z",
+  "generated": "2024-11-01T09:51:00.980199Z",
   "generator": "pub",
   "generatorVersion": "3.5.2",
   "flutterRoot": "file:///Users/rmonisha1123/Developer/flutter",
