@@ -176,7 +176,6 @@ class LandingScreenWidget extends StatelessWidget {
                     child: CustomElevatedButton(
                       backgroundColor: Apptheme.teal,
                       foregroundColor: Apptheme.white,
-                      // text: AppFontText(text: "text"),
                       input: "Mail me",
                       fontColor: Apptheme.white,
                       fontSize: 18,
@@ -186,7 +185,7 @@ class LandingScreenWidget extends StatelessWidget {
                             alignment: Alignment.bottomCenter,
                             context:
                                 context, // optional if you use ToastificationWrapper
-                            title: Text('Under Construction'),
+                            title: AppFontText(text: "Under Construction"),
                             autoCloseDuration: const Duration(seconds: 5),
                             showProgressBar: false);
                       },
@@ -235,6 +234,7 @@ class LandingScreenWidget extends StatelessWidget {
                           gradient: LinearGradient(
                             colors: [
                               Apptheme.paleAmber.withOpacity(0.8),
+                              // using Colors as its giving some gradient effect
                               Colors.amber.withOpacity(0.6)
                               // Apptheme.softAmber.withOpacity(0.6),
                             ],
@@ -359,7 +359,8 @@ class LandingScreenWidget extends StatelessWidget {
                     )),
               ),
               const Padding(
-                padding: EdgeInsets.all(20),
+                padding:
+                    EdgeInsets.only(left: 20, right: 20, top: 20, bottom: 50),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [

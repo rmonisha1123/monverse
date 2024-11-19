@@ -6,7 +6,7 @@ import 'package:monisha_portfolio/utils/constants.dart';
 import 'package:monisha_portfolio/widgets/landing_screen_widget.dart';
 
 import 'profile_screen.dart';
-import 'experience_screen.dart';
+import 'journey_screen.dart';
 import 'project_screen.dart';
 
 class LandingScreen extends StatefulWidget {
@@ -66,7 +66,8 @@ class _LandingScreenState extends State<LandingScreen> {
           LandingScreenWidget(
               scrollController: _scrollController,
               isAppBarExpanded: _isAppBarExpanded),
-          ExperienceScreen(),
+          JourneyScreen(),
+          // ExampleRoadMap(),
           ProjectScreen(),
           ProfileScreen(),
         ],
@@ -79,7 +80,7 @@ class _LandingScreenState extends State<LandingScreen> {
             icon: Icons.home,
             title: 'Home',
           ),
-          TabItem(icon: Icons.work, title: 'Experience'),
+          TabItem(icon: Icons.work, title: 'Journey'),
           TabItem(icon: Icons.code, title: 'Project'),
           TabItem(icon: Icons.person, title: 'Profile'),
         ],
