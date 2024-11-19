@@ -1,77 +1,98 @@
 import 'package:flutter/material.dart';
-import 'package:timeline_tile/timeline_tile.dart';
+import 'package:monisha_portfolio/utils/constants.dart';
+import 'package:monisha_portfolio/widgets.dart';
+
+import '../models/experience_model.dart';
 
 class ExperienceCard extends StatelessWidget {
-  final String year;
-  final String role;
-  final List<String> description;
-  final bool isFirst;
-  final bool isLast;
+  final Experience experience;
+  final bool isActive;
+  final double progress;
 
-  ExperienceCard({
-    required this.year,
-    required this.role,
-    required this.description,
-    this.isFirst = false,
-    this.isLast = false,
-  });
+  const ExperienceCard({
+    Key? key,
+    required this.experience,
+    required this.isActive,
+    required this.progress,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return TimelineTile(
-      alignment: TimelineAlign.start,
-      isFirst: isFirst,
-      isLast: isLast,
-      beforeLineStyle: const LineStyle(
-        color: Colors.blue,
-        thickness: 4,
-      ),
-      afterLineStyle: const LineStyle(
-        color: Colors.blue,
-        thickness: 4,
-      ),
-      indicatorStyle: IndicatorStyle(
-        width: 40,
-        height: 40,
-        indicator: Container(
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            color: Colors.blue,
-          ),
-          child: Center(
-            child: Text(
-              year,
-              style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-        ),
-      ),
-      endChild: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 16.0),
-        child: Card(
-          margin: EdgeInsets.symmetric(vertical: 10, horizontal: 16),
-          elevation: 4,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10),
-          ),
-          child: Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  role,
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(80, 32, 32, 32),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              // Container(
+              //   width: 12,
+              //   height: 12,
+              //   decoration: BoxDecoration(
+              //     color: Colors.white,
+              //     shape: BoxShape.circle,
+              //     border: Border.all(
+              //       color: isActive
+              //           ? Colors.deepPurple
+              //           : Colors.deepPurple.withOpacity(0.3),
+              //       width: 2,
+              //     ),
+              //   ),
+              // ),
+              const SizedBox(width: 16),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    AppFontText(
+                      text: experience.title,
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    const SizedBox(height: 4),
+                    AppFontText(
+                      text: experience.company,
+                      fontSize: 18,
+                      color: Apptheme.grey,
+                    ),
+                    AppFontText(
+                      text: experience.location,
+                      fontSize: 16,
+                      color: Apptheme.grey,
+                    ),
+                    AppFontText(
+                      text: experience.duration,
+                      fontSize: 16,
+                      color: Apptheme.grey,
+                    )
+                  ],
                 ),
-                SizedBox(height: 10),
-                ...description.map((desc) => Text("• $desc")).toList(),
-              ],
-            ),
+              ),
+            ],
           ),
-        ),
+          const SizedBox(height: 24),
+          ...experience.responsibilities.map((responsibility) {
+            return Padding(
+              padding: const EdgeInsets.only(bottom: 8),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  AppFontText(
+                    text: '• ',
+                    fontSize: 16,
+                  ),
+                  Expanded(
+                    child: AppFontText(
+                      text: responsibility,
+                      fontSize: 16,
+                    ),
+                  ),
+                ],
+              ),
+            );
+          }),
+        ],
       ),
     );
   }

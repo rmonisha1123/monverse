@@ -13,7 +13,7 @@ class CurrentExperienceSection extends StatelessWidget {
         elevation: 2,
         child: Padding(
           padding:
-              const EdgeInsets.only(left: 10, right: 10, top: 15, bottom: 15),
+              const EdgeInsets.only(left: 10, right: 10, top: 20, bottom: 20),
           child: Row(
             children: [
               // Floating Company Logo
@@ -57,7 +57,7 @@ class CurrentExperienceSection extends StatelessWidget {
                   children: [
                     // Company Name
                     Padding(
-                      padding: EdgeInsets.only(bottom: 5),
+                      padding: EdgeInsets.only(bottom: 10),
                       child: AppFontText(
                         text: AppText.currentCompanyName,
                         fontSize: 16,
