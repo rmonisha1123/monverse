@@ -9,11 +9,11 @@ class IntroPage1 extends PageViewModel {
       : super(
             titleWidget: const Column(
               children: [
-                Gap(80),
+                Gap(20),
                 AppFontText(
                   text: "Welcome to MonVerse!",
                   textAlign: TextAlign.center,
-                  fontSize: 26,
+                  fontSize: 20,
                   fontWeight: FontWeight.bold,
                   color: Apptheme.teal,
                 )
@@ -23,7 +23,7 @@ class IntroPage1 extends PageViewModel {
               constraints: const BoxConstraints(maxWidth: 600),
               child: Column(
                 children: [
-                  const Gap(20),
+                  // const Gap(20),
                   SizedBox(
                     child: Image.asset(
                       AssetPaths.introPage1,
@@ -32,12 +32,12 @@ class IntroPage1 extends PageViewModel {
                       width: 500,
                     ),
                   ),
-                  const Gap(30),
+                  const Gap(20),
                   const AppFontText(
                     text:
                         "Explore my journey as a Full Stack Mobile App Developer and discover the projects that define my passion.",
                     textAlign: TextAlign.center,
-                    fontSize: 20,
+                    fontSize: 16,
                     color: Apptheme.softAmber,
                   ),
                 ],

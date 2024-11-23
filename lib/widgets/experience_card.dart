@@ -1,3 +1,5 @@
+// ignore_for_file: use_super_parameters
+
 import 'package:flutter/material.dart';
 import 'package:monisha_portfolio/utils/constants.dart';
 import 'package:monisha_portfolio/widgets.dart';
@@ -47,23 +49,23 @@ class ExperienceCard extends StatelessWidget {
                   children: [
                     AppFontText(
                       text: experience.title,
-                      fontSize: 24,
+                      fontSize: 16,
                       fontWeight: FontWeight.bold,
                     ),
                     const SizedBox(height: 4),
                     AppFontText(
                       text: experience.company,
-                      fontSize: 18,
+                      fontSize: 14,
                       color: Apptheme.grey,
                     ),
                     AppFontText(
                       text: experience.location,
-                      fontSize: 16,
+                      fontSize: 12,
                       color: Apptheme.grey,
                     ),
                     AppFontText(
                       text: experience.duration,
-                      fontSize: 16,
+                      fontSize: 12,
                       color: Apptheme.grey,
                     )
                   ],
@@ -78,14 +80,14 @@ class ExperienceCard extends StatelessWidget {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  AppFontText(
+                  const AppFontText(
                     text: '• ',
                     fontSize: 16,
                   ),
                   Expanded(
                     child: AppFontText(
                       text: responsibility,
-                      fontSize: 16,
+                      fontSize: 12,
                     ),
                   ),
                 ],

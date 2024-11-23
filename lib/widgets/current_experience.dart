@@ -8,7 +8,7 @@ class CurrentExperienceSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 20, right: 20, top: 10),
+      padding: const EdgeInsets.only(left: 10, right: 10, top: 10),
       child: Card(
         elevation: 2,
         child: Padding(
@@ -70,21 +70,21 @@ class CurrentExperienceSection extends StatelessWidget {
                       padding: EdgeInsets.only(bottom: 10),
                       child: AppFontText(
                         text: AppText.currentPosition,
-                        fontSize: 14,
+                        fontSize: 12,
                       ),
                     ),
 
                     // Work Type and Duration
                     Padding(
                       padding: EdgeInsets.only(bottom: 8),
-                      child: const Row(
+                      child: Row(
                         children: [
                           Icon(Icons.work, color: Apptheme.teal, size: 18),
                           SizedBox(width: 5),
                           AppFontText(
                             text:
                                 "${AppText.currentCompanyWorkType} . ${AppText.currentCompanyWorkExp}",
-                            fontSize: 13,
+                            fontSize: 12,
                             color: Apptheme.grey,
                           ),
                         ],
@@ -98,7 +98,7 @@ class CurrentExperienceSection extends StatelessWidget {
                         SizedBox(width: 5),
                         AppFontText(
                           text: AppText.currentCompanyLocation,
-                          fontSize: 13,
+                          fontSize: 12,
                           color: Apptheme.grey,
                         )
                       ],

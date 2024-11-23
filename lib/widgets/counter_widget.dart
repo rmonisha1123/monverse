@@ -21,7 +21,7 @@ class CounterWidget extends StatelessWidget {
         const SizedBox(height: 5),
         AppFontText(
           text: title,
-          fontSize: 16,
+          fontSize: 12,
         )
       ],
     );

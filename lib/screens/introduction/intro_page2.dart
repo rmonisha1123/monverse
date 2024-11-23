@@ -9,11 +9,11 @@ class IntroPage2 extends PageViewModel {
       : super(
             titleWidget: const Column(
               children: [
-                Gap(80),
+                Gap(10),
                 AppFontText(
                   text: "Skills that Make a Difference",
                   textAlign: TextAlign.center,
-                  fontSize: 24,
+                  fontSize: 20,
                   fontWeight: FontWeight.bold,
                   color: Apptheme.teal,
                 ),
@@ -23,7 +23,7 @@ class IntroPage2 extends PageViewModel {
               constraints: const BoxConstraints(maxWidth: 600),
               child: Column(
                 children: [
-                  const Gap(20),
+                  // const Gap(20),
                   SizedBox(
                     child: Image.asset(
                       AssetPaths.introPage2,
@@ -32,12 +32,12 @@ class IntroPage2 extends PageViewModel {
                       width: 500,
                     ),
                   ),
-                  const Gap(20),
+                  const Gap(10),
                   const AppFontText(
                     text:
                         "From Flutter and Dart to Project management, see how I bring creative ideas to life with expertise and precision.",
                     textAlign: TextAlign.center,
-                    fontSize: 20,
+                    fontSize: 16,
                     color: Apptheme.softAmber,
                   ),
                 ],
