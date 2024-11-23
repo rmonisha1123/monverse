@@ -9,11 +9,11 @@ class IntroPage3 extends PageViewModel {
       : super(
             titleWidget: const Column(
               children: [
-                Gap(80),
+                Gap(20),
                 AppFontText(
                   text: "Let's Collaborate",
                   textAlign: TextAlign.center,
-                  fontSize: 24,
+                  fontSize: 20,
                   fontWeight: FontWeight.bold,
                   color: Apptheme.teal,
                 ),
@@ -23,7 +23,7 @@ class IntroPage3 extends PageViewModel {
               constraints: const BoxConstraints(maxWidth: 600),
               child: Column(
                 children: [
-                  const Gap(20),
+                  // const Gap(20),
                   SizedBox(
                     child: Image.asset(
                       AssetPaths.introPage3,
@@ -37,7 +37,7 @@ class IntroPage3 extends PageViewModel {
                     text:
                         "Reach out to me for opportunities, collaborations, or to learn more about my work. Let’s create something amazing together!",
                     textAlign: TextAlign.center,
-                    fontSize: 20,
+                    fontSize: 16,
                     color: Apptheme.softAmber,
                   ),
                 ],

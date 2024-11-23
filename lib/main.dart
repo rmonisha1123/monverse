@@ -68,11 +68,12 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       theme: ThemeData(
         textTheme: TextTheme(
-          bodyMedium: GoogleFonts.montserrat(fontSize: 12),
+          bodyMedium: GoogleFonts.montserrat(fontSize: 10),
         ),
       ),
       title: 'MonVerse',
       debugShowCheckedModeBanner: false,
+      // home: IntroScreen(),
       home: _isFirstLaunch ? const IntroScreen() : const LandingScreen(),
     );
   }

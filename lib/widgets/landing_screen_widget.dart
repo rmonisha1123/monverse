@@ -40,7 +40,7 @@ class LandingScreenWidget extends StatelessWidget {
               color: _isAppBarExpanded
                   ? const Color.fromARGB(255, 32, 42, 102)
                   : Apptheme.white,
-              fontSize: 20,
+              fontSize: 16,
               fontWeight: FontWeight.bold,
             ),
             background: Stack(
@@ -93,7 +93,7 @@ class LandingScreenWidget extends StatelessWidget {
                     children: [
                       const AppFontText(
                         text: "Hi, I'm ",
-                        fontSize: 20,
+                        fontSize: 17,
                         color: Apptheme.black,
                       ),
                       AnimatedTextKit(
@@ -102,7 +102,7 @@ class LandingScreenWidget extends StatelessWidget {
                           TypewriterAnimatedText(
                             'Monisha Ravikumar!',
                             textStyle: GoogleFonts.montserrat(
-                              fontSize: 22,
+                              fontSize: 20,
                               color: Apptheme.black,
                             ),
                             speed: const Duration(milliseconds: 200),
@@ -111,7 +111,7 @@ class LandingScreenWidget extends StatelessWidget {
                           TypewriterAnimatedText(
                               'Full Stack Mobile App Developer',
                               textStyle: GoogleFonts.montserrat(
-                                fontSize: 22,
+                                fontSize: 20,
                                 color: Apptheme.black,
                               ),
                               speed: const Duration(milliseconds: 200),
@@ -120,7 +120,7 @@ class LandingScreenWidget extends StatelessWidget {
                           TypewriterAnimatedText(
                             'Technical Lead',
                             textStyle: GoogleFonts.montserrat(
-                              fontSize: 22,
+                              fontSize: 20,
                               color: Apptheme.black,
                             ),
                             speed: const Duration(milliseconds: 200),
@@ -129,7 +129,7 @@ class LandingScreenWidget extends StatelessWidget {
                           TypewriterAnimatedText(
                             'DevOps Engineer',
                             textStyle: GoogleFonts.montserrat(
-                              fontSize: 22,
+                              fontSize: 20,
                               color: Apptheme.black,
                             ),
                             speed: const Duration(milliseconds: 200),
@@ -138,7 +138,7 @@ class LandingScreenWidget extends StatelessWidget {
                           TypewriterAnimatedText(
                             'Project Manager',
                             textStyle: GoogleFonts.montserrat(
-                              fontSize: 22,
+                              fontSize: 20,
                               color: Apptheme.black,
                             ),
                             speed: const Duration(milliseconds: 200),
@@ -147,7 +147,7 @@ class LandingScreenWidget extends StatelessWidget {
                           TypewriterAnimatedText(
                             'Scrum Master',
                             textStyle: GoogleFonts.montserrat(
-                              fontSize: 22,
+                              fontSize: 20,
                               color: Apptheme.black,
                             ),
                             speed: const Duration(milliseconds: 200),
@@ -163,7 +163,10 @@ class LandingScreenWidget extends StatelessWidget {
               // below animation content - colab
               const Padding(
                 padding: EdgeInsets.only(left: 20, right: 20, bottom: 10),
-                child: AppFontText(text: AppText.colabContent),
+                child: AppFontText(
+                  text: AppText.colabContent,
+                  fontSize: 14,
+                ),
               ),
 
               // Button content - colab
@@ -178,7 +181,7 @@ class LandingScreenWidget extends StatelessWidget {
                       foregroundColor: Apptheme.white,
                       input: "Mail me",
                       fontColor: Apptheme.white,
-                      fontSize: 18,
+                      fontSize: 16,
                       onPress: () {
                         toastification.show(
                             type: ToastificationType.error,
@@ -200,7 +203,7 @@ class LandingScreenWidget extends StatelessWidget {
                       foregroundColor: Apptheme.white,
                       input: "Hire Me",
                       fontColor: Apptheme.white,
-                      fontSize: 18,
+                      fontSize: 16,
                       onPress: () {
                         toastification.show(
                             type: ToastificationType.error,
@@ -248,13 +251,13 @@ class LandingScreenWidget extends StatelessWidget {
                     const Positioned.fill(
                       child: Padding(
                         padding: const EdgeInsets.symmetric(
-                            horizontal: 20, vertical: 40),
+                            horizontal: 10, vertical: 20),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             AppFontText(
                               text: "About Me",
-                              fontSize: 18,
+                              fontSize: 16,
                               fontWeight: FontWeight.bold,
                               color:
                                   Apptheme.softAmber, // Customize as per theme
@@ -263,7 +266,7 @@ class LandingScreenWidget extends StatelessWidget {
                             Flexible(
                               child: AppFontText(
                                 text: AppText.aboutMe,
-                                fontSize: 14,
+                                fontSize: 12,
                                 // height: 1.5, // For better readability
                                 color: Apptheme
                                     .black, // Adjust to your main text color
@@ -286,7 +289,7 @@ class LandingScreenWidget extends StatelessWidget {
                     AppFontText(
                       text: "Tech Stack",
                       fontWeight: FontWeight.bold,
-                      fontSize: 20,
+                      fontSize: 16,
                     ),
                     AppFontText(
                       text: "Swipe to see more",
@@ -342,7 +345,7 @@ class LandingScreenWidget extends StatelessWidget {
                   child: AppFontText(
                     text: "Current Experience",
                     fontWeight: FontWeight.bold,
-                    fontSize: 20,
+                    fontSize: 16,
                   ),
                 ),
               ),
@@ -355,7 +358,7 @@ class LandingScreenWidget extends StatelessWidget {
                     child: AppFontText(
                       text: "Achievements",
                       fontWeight: FontWeight.bold,
-                      fontSize: 20,
+                      fontSize: 16,
                     )),
               ),
               const Padding(

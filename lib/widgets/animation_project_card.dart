@@ -1,3 +1,5 @@
+// ignore_for_file: library_private_types_in_public_api
+
 import 'package:flutter/material.dart';
 
 import '../utils/constants.dart';
@@ -40,8 +42,9 @@ class _AnimatedProjectCardState extends State<AnimatedProjectCard>
       CurvedAnimation(parent: _controller, curve: Curves.easeOut),
     );
 
-    _slideAnimation = Tween<Offset>(begin: Offset(0, 0.3), end: Offset.zero)
-        .animate(CurvedAnimation(
+    _slideAnimation =
+        Tween<Offset>(begin: const Offset(0, 0.3), end: Offset.zero)
+            .animate(CurvedAnimation(
       parent: _controller,
       curve: Curves.easeOut,
     ));
@@ -65,7 +68,7 @@ class _AnimatedProjectCardState extends State<AnimatedProjectCard>
         scale: _scaleAnimation,
         child: Card(
           elevation: 10,
-          margin: EdgeInsets.symmetric(vertical: 12, horizontal: 8),
+          margin: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),
           ),
@@ -79,11 +82,12 @@ class _AnimatedProjectCardState extends State<AnimatedProjectCard>
                 children: [
                   Row(
                     children: [
-                      Icon(Icons.folder, color: Apptheme.ogTeal, size: 28),
+                      const Icon(Icons.folder,
+                          color: Apptheme.ogTeal, size: 28),
                       const SizedBox(width: 10),
                       AppFontText(
                         text: widget.name,
-                        fontSize: 22,
+                        fontSize: 16,
                         fontWeight: FontWeight.w500,
                         color: Apptheme.ogTeal,
                       )
@@ -95,7 +99,7 @@ class _AnimatedProjectCardState extends State<AnimatedProjectCard>
                   const SizedBox(height: 8),
                   AppFontText(
                     text: widget.description,
-                    fontSize: 16,
+                    fontSize: 12,
                     color: Apptheme.black.withOpacity(0.7),
                   ),
                   const SizedBox(height: 12),
@@ -195,7 +199,7 @@ class _AnimatedProjectCardState extends State<AnimatedProjectCard>
                               Text(
                                 widget.name,
                                 style: TextStyle(
-                                  fontSize: 24,
+                                  fontSize: 16,
                                   fontWeight: FontWeight.bold,
                                   // using Colors as its using shade 900
                                   color: Colors.teal.shade900,
@@ -215,7 +219,7 @@ class _AnimatedProjectCardState extends State<AnimatedProjectCard>
                           // Project description
                           AppFontText(
                             text: widget.description,
-                            fontSize: 16,
+                            fontSize: 12,
                             color: Apptheme.black.withOpacity(0.7),
                           ),
                           const SizedBox(height: 16),
@@ -231,9 +235,9 @@ class _AnimatedProjectCardState extends State<AnimatedProjectCard>
                           ),
                           const SizedBox(height: 20),
                           // Full description as bullet points
-                          AppFontText(
+                          const AppFontText(
                             text: "Responsibilities: ",
-                            fontSize: 18,
+                            fontSize: 16,
                             fontWeight: FontWeight.w600,
                             color: Apptheme.darkTeal,
                           ),
@@ -256,7 +260,7 @@ class _AnimatedProjectCardState extends State<AnimatedProjectCard>
                                     Expanded(
                                       child: AppFontText(
                                         text: item,
-                                        fontSize: 16,
+                                        fontSize: 12,
                                         color: Apptheme.black.withOpacity(0.7),
                                       ),
                                     ),
