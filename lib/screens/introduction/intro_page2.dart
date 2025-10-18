@@ -9,7 +9,7 @@ class IntroPage2 extends PageViewModel {
       : super(
             titleWidget: const Column(
               children: [
-                Gap(10),
+                Gap(20),
                 AppFontText(
                   text: "Skills that Make a Difference",
                   textAlign: TextAlign.center,

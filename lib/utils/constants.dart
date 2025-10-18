@@ -9,6 +9,7 @@ class Apptheme {
   static const Color paleAmber = Color.fromARGB(255, 246, 193, 119);
   static const Color paleCoral = Color.fromARGB(255, 211, 242, 240);
   static const Color teal = Color.fromARGB(255, 97, 193, 182);
+  static const Color darkBlueGradient = Color.fromARGB(255, 69, 93, 230);
   static const Color ogTeal = Colors.teal;
   static const Color darkTeal = Color.fromRGBO(0, 77, 64, 1);
   static const Color deepPurple = Colors.deepPurple;
